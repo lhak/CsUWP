@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
+		<TargetFramework>net6.0-windows</TargetFramework>
 		<CsWinRTWindowsMetadata>10.0.22000.0+</CsWinRTWindowsMetadata>
 		<AssetTargetFallback>uap10.0.22000</AssetTargetFallback>
 		<CsWinRTFilters>
-      -include Windows
+			-include Windows
 		</CsWinRTFilters>
 		<EnableTrimAnalyzer>true</EnableTrimAnalyzer>
 		<IsTrimmable>true</IsTrimmable>
@@ -15,9 +15,11 @@
 		<FrameworkReference Remove="Microsoft.Windows.SDK.NET.Ref" />
 		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.6.5-private.1" />
 	</ItemGroup>
-	
-  <PropertyGroup>
-    <DefineConstants>TRACE;MANUAL_IUNKNOWN,UAC_VERSION_13</DefineConstants>
-  </PropertyGroup>
+
+	<PropertyGroup>
+		<DefineConstants>TRACE;MANUAL_IUNKNOWN,UAC_VERSION_13</DefineConstants>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>Windows.Full.SDK.NET</PackageId>
+	</PropertyGroup>
 
 </Project>
