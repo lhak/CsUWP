@@ -15,7 +15,7 @@
 
 	<ItemGroup>
 		<FrameworkReference Remove="Microsoft.Windows.SDK.NET.Ref" />
-		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.6.5-private.1" />
+		<PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.0.0-private.1" />
 		<ProjectReference Include="..\Windows\Windows.csproj" />
 		<PackageReference Include="Microsoft.UI.Xaml" Version="2.8.0-prerelease.220712001" GeneratePathProperty="true">
 			<ExcludeAssets>build; buildtransitive; compile; runtime</ExcludeAssets>
